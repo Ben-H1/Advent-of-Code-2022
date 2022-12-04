@@ -18,7 +18,7 @@ const assignments = splitInput.map(pair => getAssignment(pair));
 
 let total = 0;
 
-assignments.forEach((assignment) => {    
+assignments.forEach((assignment) => {
     if (
         ((assignment[1].start >= assignment[0].start) && (assignment[1].end <= assignment[0].end)) ||
         ((assignment[0].start >= assignment[1].start) && (assignment[0].end <= assignment[1].end))
